@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_112" class="java.beans.XMLDecoder">
+ <object class="sample.Car">
+  <void property="name">
+   <string>Subaru</string>
+  </void>
+  <void property="number">
+   <string>23456</string>
+  </void>
+  <void property="type">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>sample.Transport$transportType</class>
+    <string>Overland</string>
+   </object>
+  </void>
+ </object>
+</java>

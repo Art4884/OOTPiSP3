@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SeaController">
+   <children>
+      <AnchorPane prefHeight="604.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="bNameField" layoutX="126.0" layoutY="14.0" prefHeight="25.0" prefWidth="258.0" />
+            <TextField fx:id="bNumberField" layoutX="126.0" layoutY="50.0" prefHeight="25.0" prefWidth="258.0" />
+            <TextField fx:id="materialField" layoutX="126.0" layoutY="89.0" prefHeight="25.0" prefWidth="258.0" />
+            <CheckBox fx:id="bMotorCheck" layoutX="126.0" layoutY="136.0" mnemonicParsing="false" text="Motor" />
+            <CheckBox fx:id="oarsCheck" layoutX="220.0" layoutY="136.0" mnemonicParsing="false" text="Oars" />
+            <Label layoutX="14.0" layoutY="18.0" text="Name" />
+            <Label layoutX="16.0" layoutY="54.0" text="Number" />
+            <Label layoutX="16.0" layoutY="93.0" text="Primary material" />
+            <Button layoutX="16.0" layoutY="171.0" mnemonicParsing="false" onAction="#textSerializationBoat" prefHeight="25.0" prefWidth="133.0" text="Text serialization" />
+            <Button layoutX="167.0" layoutY="171.0" mnemonicParsing="false" onAction="#textDeserializationBoat" prefHeight="25.0" prefWidth="133.0" text="Text deserialization" />
+            <Button layoutX="16.0" layoutY="209.0" mnemonicParsing="false" onAction="#binarySerializationBoat" prefHeight="25.0" prefWidth="133.0" text="Binary serialization" />
+            <Button layoutX="167.0" layoutY="209.0" mnemonicParsing="false" onAction="#binaryDeserializationBoat" prefHeight="25.0" prefWidth="133.0" text="Binary deserialization" />
+            <Button layoutX="16.0" layoutY="245.0" mnemonicParsing="false" onAction="#xmlSerializationBoat" prefHeight="25.0" prefWidth="133.0" text="XML serialization" />
+            <Button layoutX="167.0" layoutY="245.0" mnemonicParsing="false" onAction="#xmlDeserializationBoat" prefHeight="25.0" prefWidth="133.0" text="XML deserialization" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.

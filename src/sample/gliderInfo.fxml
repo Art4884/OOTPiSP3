@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AirController">
+   <children>
+      <AnchorPane prefHeight="487.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="nameFieldG" layoutX="156.0" layoutY="14.0" prefHeight="25.0" prefWidth="244.0" />
+            <TextField fx:id="numberFieldG" layoutX="156.0" layoutY="60.0" prefHeight="25.0" prefWidth="244.0" />
+            <TextField fx:id="placesFieldG" layoutX="156.0" layoutY="104.0" prefHeight="25.0" prefWidth="244.0" />
+            <TextField fx:id="typeFieldG" layoutX="156.0" layoutY="150.0" prefHeight="25.0" prefWidth="244.0" />
+            <CheckBox fx:id="helixCheckG" layoutX="156.0" layoutY="192.0" mnemonicParsing="false" text="Helix" />
+            <Label layoutX="14.0" layoutY="18.0" text="Name" />
+            <Label layoutX="14.0" layoutY="64.0" text="Number" />
+            <Label layoutX="16.0" layoutY="108.0" text="Quantity of sitting places" />
+            <Label layoutX="14.0" layoutY="154.0" text="Type of glider" />
+            <Button layoutX="14.0" layoutY="220.0" mnemonicParsing="false" onAction="#textSerializationGlider" prefHeight="25.0" prefWidth="133.0" text="Text serialization" />
+            <Button layoutX="167.0" layoutY="220.0" mnemonicParsing="false" onAction="#textDeserializationGlider" prefHeight="25.0" prefWidth="133.0" text="Text deserialization" />
+            <Button layoutX="14.0" layoutY="270.0" mnemonicParsing="false" onAction="#binarySerializationGlider" prefHeight="25.0" prefWidth="133.0" text="Binary serialization" />
+            <Button layoutX="167.0" layoutY="270.0" mnemonicParsing="false" onAction="#binaryDeserializationGlider" prefHeight="25.0" prefWidth="133.0" text="Binary deserialization" />
+            <Button layoutX="14.0" layoutY="320.0" mnemonicParsing="false" onAction="#xmlSerializationGlider" prefHeight="25.0" prefWidth="133.0" text="XML serialization" />
+            <Button layoutX="167.0" layoutY="320.0" mnemonicParsing="false" onAction="#xmlDeserializationGlider" prefHeight="25.0" prefWidth="133.0" text="XML deserialization" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
